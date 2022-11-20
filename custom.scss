@@ -1,0 +1,23 @@
+/* custom.scss */    
+
+/* import the necessary Bootstrap files */
+@import "scss/functions";
+@import "scss/variables";
+
+/* -------begin customization-------- */   
+
+/* simply assign the value */ 
+$body-bg: #eeeeee;
+
+/* use a variable to override primary */
+$theme-colors: (
+    primary: rebeccapurple,
+    danger: #dd0000,
+    success: lime,
+    warning: orange,
+    info: aqua
+);
+/* -------end customization-------- */  
+
+/* finally, import Bootstrap to set the changes! */
+@import "scss/bootstrap";
