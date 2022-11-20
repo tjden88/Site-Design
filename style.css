@@ -17,3 +17,67 @@
 body {
     font-family: "Montserrat", sans-serif;
 }
+
+section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.top-header a{
+    text-decoration: none;
+}
+
+.menu-link {
+    display: flex;
+    margin-left: -1.25rem;
+}
+
+    .menu-link > li {
+        position: relative;
+        margin-left: 1rem;
+        padding: 1rem 0;
+    }
+
+        .menu-link > li:hover > a > span, .menu-link > li > a.active > span {
+            transform: translateY(100%);
+        }
+
+        .menu-link > li:hover > a::after, .menu-link > li > a.active::after {
+            transform: none;
+        }
+
+        .menu-link > li:last-child > a {
+            padding-right: 0;
+        }
+
+        .menu-link > li > a {
+            font-size: 0.9375rem;
+            padding: 0 0.625rem;
+            overflow: hidden;
+        }
+
+            .menu-link > li > a::after {
+                content: attr(data-title);
+                position: absolute;
+                left: 0;
+                top: 0;
+                transform: translateY(-100%);
+                padding: 0 0.625rem;
+                width: 100%;
+                white-space: nowrap;
+                transition: all 0.4s;
+                color: #186ADC;
+            }
+
+            .menu-link > li > a > span {
+                display: block;
+                transform: translateY(0);
+                transition: all 0.4s;
+            }
+
+        .menu-link > li a {
+            position: relative;
+            display: block;
+            text-decoration: none;
+            font-size: 1rem;
+        }

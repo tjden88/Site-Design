@@ -6,14 +6,16 @@
 
 /* -------begin customization-------- */   
 
-/* simply assign the value */ 
-$body-bg: #eeeeee;
-
 /* use a variable to override primary */
 $theme-colors: (
-    primary: #186ADC,
-    danger: #ff3d0d,
-    info: purple
+  "primary":    #186ADC,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       purple,
+  "warning":    $warning,
+  "danger":     #ff3d0d,
+  "light":      $light,
+  "dark":       #303036
 );
 /* -------end customization-------- */  
 
