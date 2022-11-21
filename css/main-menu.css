@@ -9,6 +9,10 @@
     color: var(--bs-light);
 }
 
+.s-main-menu-title {
+    font-size: 1.85rem;
+}
+
 .s-main-menu-list {
     display: flex;
     margin-left: -1.25rem;
@@ -48,7 +52,7 @@
                 width: 100%;
                 white-space: nowrap;
                 transition: all 0.4s;
-                color: #186ADC;
+                color: var(--bs-primary);
             }
 
             .s-main-menu-list > li > a > span {
@@ -58,7 +62,7 @@
             }
 
         .s-main-menu-list > li a {
-            color: #303036;
+            color: var(--bs-dark);
             position: relative;
             display: block;
             text-decoration: none;

@@ -4,7 +4,13 @@
 @import "scss/functions";
 @import "scss/variables";
 
-/* -------begin customization-------- */   
+/* -------btns-------- */   
+$btn-padding-y: 0.6rem;
+$btn-padding-x: 1.5rem;
+$btn-font-size: 0.9rem;
+
+/* -------fonts-------- */  
+$headings-font-weight: 600;
 
 /* use a variable to override primary */
 $theme-colors: (
