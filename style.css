@@ -23,8 +23,17 @@ section {
     margin-bottom: 2rem;
 }
 
+.debug{
+    border: red 1px solid !important;
+}
+
 .s-top-header a{
     text-decoration: none;
+    color: var(--bs-light);
+}
+
+.s-top-header i{
+    color: var(--bs-light);
 }
 
 .s-main-menu-list {

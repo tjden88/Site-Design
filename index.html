@@ -6,52 +6,104 @@
     <title>Дизайн сайта</title>
     <link rel="stylesheet" href="bs-custom.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/fa.min.css">
 </head>
 <body>
-    <div class="bg-dark p-2 d-none d-lg-block s-top-header">
-        <div class="container">
-            <a class="text-light" href="#">
-                <span>Вход</span>
-            </a>
+    <!-- Заголовок -->
+    <!-- Мобильное меню -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobile-menu" aria-labelledby="mobile-menu-Label">
+        <div class="offcanvas-header bg-light">
+          <h5 class="offcanvas-title" id="mobile-menu-Label">
+            ЗАГОЛОВОК
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#mobile-menu" aria-label="Закрыть"></button>
         </div>
-    </div>
-    <header class="sticky-top">
-        <nav class="navbar bg-light shadow-sm navbar-expand-lg p-2">
+        <div class="offcanvas-body">
+            <ul class="nav flex-column s-main-menu-list">
+                <li>
+                    <a class="active" data-title="Главная" href="#">
+                        <span>
+                            Главная
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a data-title="Ссылка" href="#">
+                        <span>
+                            Ссылка
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a data-title="Ссылка" href="#">
+                        <span>
+                            Ссылка
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+      </div>
+
+    <header>
+        <!-- Верхнее меню -->
+        <div class="bg-dark p-2 d-none d-lg-block s-top-header">
             <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <a href="#">
+                            <span>Вход</span>
+                        </a>
+                    </div>
+                    <div class="col-auto">
+                        <a class="me-3" href="#">
+                            <i class="fa fa-brands fa-telegram" aria-hidden="true"></i>
+                        </a>
+                        <a class="me-3" href="#">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-brands fa-whatsapp" aria-hidden="true"></i>
+                        </a>     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header class="sticky-top">
+        <nav class="navbar bg-light shadow-sm p-2">
+            <div class="container">
+                <button class="navbar-toggler d-lg-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobile-menu" aria-controls="mobile-menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-brand">Заголовок</div>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header  bg-light">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ЗАГОЛОВОК</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 s-main-menu-list">
-                            <li>
-                                <a class="active" data-title="Главная" href="#">
-                                    <span>
-                                        Главная
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a data-title="Ссылка" href="#">
-                                    <span>
-                                        Ссылка
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a data-title="Ссылка" href="#">
-                                    <span>
-                                        Ссылка
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="navbar-brand">
+                    <h2 class="mb-0">Заголовок</h2>
+                </div>
+                <div class="d-none d-lg-block">
+                    <ul class="nav justify-content-end s-main-menu-list">
+                        <li>
+                            <a class="active" data-title="Главная" href="#">
+                                <span>
+                                    Главная
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-title="Ссылка" href="#">
+                                <span>
+                                    Ссылка
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-title="Ссылка" href="#">
+                                <span>
+                                    Ссылка
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
