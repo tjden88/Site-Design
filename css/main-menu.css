@@ -68,3 +68,17 @@
             text-decoration: none;
             font-size: 1rem;
         }
+
+.s-mobile-menu-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--bs-dark);
+}
+
+.s-mobile-menu-bottom a {
+    text-decoration: none;
+    color: var(--bs-light);
+}
