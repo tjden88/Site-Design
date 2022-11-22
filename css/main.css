@@ -25,7 +25,7 @@
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
 .s-section {
@@ -41,4 +41,5 @@ body {
 
 .debug{
     border: red 1px solid !important;
+    background-color: aqua !important;
 }
