@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дизайн сайта</title>
+    <link rel="stylesheet" href="bs-custom.css">
+    <link rel="stylesheet" href="css/fa.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main-menu.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+    <!-- Заголовок -->
+    <!-- Мобильное меню -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobile-menu" aria-labelledby="mobile-menu-Label">
+        <div class="offcanvas-header bg-light">
+            <h5 class="offcanvas-title" id="mobile-menu-Label">
+                ЗАГОЛОВОК
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#mobile-menu"
+                aria-label="Закрыть"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column s-main-menu-list">
+                <li>
+                    <a class="active" data-title="Главная" href="#">
+                        <span>
+                            Главная
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a data-title="Ссылка" href="#">
+                        <span>
+                            Ссылка
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a data-title="Ссылка" href="#">
+                        <span>
+                            Ссылка
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <div class="s-mobile-menu-bottom">
+                <a href="#">
+                    <span>Вход</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <!-- Верхнее меню -->
+        <div class="bg-dark p-2 d-none d-lg-block s-top-header">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <a href="#">
+                            <span>Вход</span>
+                        </a>
+                    </div>
+                    <div class="col-auto">
+                        <a class="me-3" href="#">
+                            <i class="fa fa-brands fa-telegram" aria-hidden="true"></i>
+                        </a>
+                        <a class="me-3" href="#">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-brands fa-whatsapp" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главное меню -->
+    <header class="sticky-top">
+        <nav class="navbar bg-light shadow-sm p-2">
+            <div class="container">
+                <button class="navbar-toggler d-lg-none border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#mobile-menu" aria-controls="mobile-menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="s-main-menu-title">
+                    Заголовок
+                </div>
+                <div class="d-none d-lg-block">
+                    <ul class="nav justify-content-end s-main-menu-list">
+                        <li>
+                            <a class="active" data-title="Главная" href="#">
+                                <span>
+                                    Главная
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-title="Ссылка" href="#">
+                                <span>
+                                    Ссылка
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-title="Ссылка" href="#">
+                                <span>
+                                    Ссылка
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="s-section">
+            <div class="container">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark p-4">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-auto">
+                </div>
+                <div class="col-auto">
+                    <div class="text-light">
+                        <small>© 2022 Изготовление мебели в Екатеринбурге.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

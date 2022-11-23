@@ -26,6 +26,13 @@
 
 body {
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
 }
 
 .s-section {
