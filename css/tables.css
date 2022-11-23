@@ -1,0 +1,15 @@
+/* Таблицы */
+table thead th {
+    text-transform: uppercase;
+    color: var(--bs-primary);
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+table tbody tr {
+    transition: all 0.2s;
+}
+
+table tbody tr:hover {
+    background-color: rgba(var(--bs-primary-rgb), 0.08); 
+}
