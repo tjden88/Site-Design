@@ -23,6 +23,9 @@ $theme-colors: (
   "light":      $light,
   "dark":       #303036
 );
+
+$mark-bg: $primary;
+
 /* -------end customization-------- */  
 
 /* finally, import Bootstrap to set the changes! */

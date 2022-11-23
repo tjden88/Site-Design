@@ -35,6 +35,10 @@ footer {
     margin-top: auto;
 }
 
+mark {
+    color: var(--bs-body-bg);
+}
+
 .s-section {
     margin-top: 2rem;
     margin-bottom: 2rem;

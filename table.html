@@ -126,32 +126,83 @@
 
     <main>
         <section class="s-section">
-            <div class="container">
-                <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
+            <div class="container p-2">
+                <div class="s-invoice-container p-3 p-md-4 p-lg-5">
+                    <div class="row">
+                        <div class="col pb-3">
+                            <h4 class="text-uppercase">
+                                РАСЧЁТ СТОИМОСТИ (БЕЗ СТОЛЕШНИЦЫ)
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="row pb-3 pb-md-4 pb-lg-5">
+                        <div class="col">
+                            <div class="text-uppercase pb-2">
+                                <i class="fa-regular fa-clock"></i>
+                                10 НОЯБРЯ 2022 Г.
+                            </div>
+                            <div>
+                                <a class="btn btn-primary">
+                                    <i class="fa fa-file-pdf"></i>
+                                    Скачать PDF
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <table class="table s-invioce-table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">First</th>
+                                        <th scope="col">Last</th>
+                                        <th scope="col" class="text-end">Handle</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td class="text-end">@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td class="text-end">@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Larry the Bird</td>
+                                        <td class="text-end">@twitter</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row pb-5">
+                        <div class="col-auto">
+                            <h4>Итоговая стоимость</h4>
+                        </div>
+                        <div class="col text-end">
+                            <h4>301 573 ₽</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <b>Условия оплаты</b>
+                            <ul class="small">
+                                <li>
+                                    Расчёт стоимости заказа актуален в течение 7 дней
+                                </li>
+                                <li>
+                                    Для запуска заказа в производство необходима предоплата в размере не менее <mark>151&nbsp;000 ₽</mark>
+                                </li>
+                                <li>
+                                    Остаток оплачивается при доставке или при получении изделия на производстве в случае самовывоза.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
