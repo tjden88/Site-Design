@@ -1,4 +1,4 @@
-/* Стили главного меню */
+/* Стили верхнего меню */
 
 .s-top-header a{
     text-decoration: none;
@@ -8,6 +8,8 @@
 .s-top-header i{
     color: var(--bs-light);
 }
+
+/* Стили главного меню */
 
 .s-main-menu-title {
     font-size: 1.85rem;
@@ -24,11 +26,11 @@
         padding: 1rem 0;
     }
 
-        .s-main-menu-list > li:hover > a > span, .s-main-menu-list > li > a.active > span {
+        .s-main-menu-list > li:hover > a > span, .s-main-menu-list > li.active > a > span {
             transform: translateY(100%);
         }
 
-        .s-main-menu-list > li:hover > a::after, .s-main-menu-list > li > a.active::after {
+        .s-main-menu-list > li:hover > a::after, .s-main-menu-list > li.active > a::after {
             transform: none;
         }
 
@@ -68,6 +70,29 @@
             text-decoration: none;
             font-size: 1rem;
         }
+
+/* Стили мобильного меню */
+
+.s-mobile-menu-list > li {
+    background-color: rgba(var(--bs-primary-rgb), 0.08);
+    padding: 0.8rem;
+    margin-bottom: 1px;
+    color: var(--bs-dark);
+    cursor: pointer;
+}
+
+    .s-mobile-menu-list > li > a {
+        color: var(--bs-dark);
+        text-decoration: none;
+    }
+
+    .s-mobile-menu-list > li.active {
+        background-color: var(--bs-primary);
+    }
+
+    .s-mobile-menu-list > li.active a {
+        color: var(--bs-body-bg);
+    }
 
 .s-mobile-menu-bottom {
     position: absolute;
