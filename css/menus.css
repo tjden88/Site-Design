@@ -22,11 +22,11 @@
         padding: 1rem 0;
     }
 
-        .s-main-menu-list > li:hover > a > span, .s-main-menu-list > li.active > a > span {
+        .s-main-menu-list > li:hover > a > span, .s-main-menu-list > li > a.active > span {
             transform: translateY(100%);
         }
 
-        .s-main-menu-list > li:hover > a::after, .s-main-menu-list > li.active > a::after {
+        .s-main-menu-list > li:hover > a::after, .s-main-menu-list > li > a.active::after {
             transform: none;
         }
 
@@ -70,24 +70,27 @@
 /* Стили мобильного меню */
 
 .s-mobile-menu-list > li {
-    background-color: rgba(var(--bs-primary-rgb), 0.08);
-    padding: 0.8rem;
     margin-bottom: 1px;
-    color: var(--bs-dark);
-    cursor: pointer;
 }
 
-    .s-mobile-menu-list > li > a {
-        color: var(--bs-dark);
-        text-decoration: none;
-    }
+.s-mobile-menu-list > li > a {
+    background-color: rgba(var(--bs-primary-rgb), 0.08);
+    color: var(--bs-dark);
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 0 0 0 1.25rem;
+    height: 3.125rem;
+    line-height: 3.125rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
 
-    .s-mobile-menu-list > li.active {
-        background-color: var(--bs-primary);
-    }
 
-    .s-mobile-menu-list > li.active a {
+    .s-mobile-menu-list > li a.active {
         color: var(--bs-body-bg);
+        background-color: var(--bs-primary);
     }
 
 .s-mobile-menu-bottom {
