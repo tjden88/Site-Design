@@ -11,10 +11,6 @@
 
 /* Стили главного меню */
 
-.s-main-menu-title {
-    font-size: 1.85rem;
-}
-
 .s-main-menu-list {
     display: flex;
     margin-left: -1.25rem;
