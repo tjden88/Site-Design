@@ -46,13 +46,14 @@ table tbody tr:hover {
 .s-invoice-badge {
     position: absolute;
     top: 2rem;
-    right: -3.75rem;
+    right: -3.4rem;
     width: 12.5rem;
     height: 2rem;
     line-height: 2rem;
     background-color: var(--bs-primary);
     color: var(--bs-body-bg);
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.85rem;
     transform: rotate(45deg);
+    text-transform: uppercase;
 }
